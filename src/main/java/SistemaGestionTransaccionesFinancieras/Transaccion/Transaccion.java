@@ -29,6 +29,6 @@ public abstract class Transaccion {
 
     @Override
     public String toString() {
-        return String.format("Fecha: %s | Monto: %.2f | Descripción: %s", fecha, monto, descripcion);
+        return String.format("Fecha: | Monto: | Descripción: ", fecha, monto, descripcion);
     }
 }
