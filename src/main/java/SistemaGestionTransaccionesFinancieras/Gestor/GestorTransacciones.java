@@ -86,7 +86,7 @@ public class GestorTransacciones {
         return capital;
     }
 
-    // Devuelve la lista completa de transacciones se puede usar en reportes
+    // Devuelve la lista completa de transacciones se puede usar para reportes tambien
     public ArrayList<Transaccion> getListaTransacciones() {
         return listaTransacciones;
     }
