@@ -1,30 +1,47 @@
 package SistemaGestionTransaccionesFinancieras.Transaccion;
 
-public class ExcepcionTransaccion {
-    private String mensaje;
+/**
+ * Excepción personalizada para errores en transacciones financieras.
+ */
+public class ExcepcionTransaccion extends Exception {
 
-    public ExcepcionTransaccion() {
-        this.mensaje = "";
+    public ExcepcionTransaccion(String mensaje) {
+        super(mensaje);
     }
 
-    public boolean validarIngreso(double monto) {
-        if (monto < 0) {
-            mensaje = "El monto no puede ser negativo para un ingreso.";
-            return false;
+    /**
+     * Lanza excepción si el monto no es positivo.
+     * @param monto Monto a validar.
+     * @throws ExcepcionTransaccion si el monto es <= 0.
+     */
+    public static void validarMontoPositivo(double monto) throws ExcepcionTransaccion {
+        if (monto <= 0) {
+            throw new ExcepcionTransaccion("El monto debe ser mayor que cero.");
         }
-        return true;
     }
 
-    public boolean validarEgreso(double monto, double capitalDisponible) {
+    /**
+     * Valida que un ingreso tenga un monto válido.
+     *
+     * @param monto Monto del ingreso.
+     * @return
+     * @throws ExcepcionTransaccion si el monto no es válido.
+     */
+    public static boolean validarIngreso(double monto) throws ExcepcionTransaccion {
+        validarMontoPositivo(monto);
+        return false;
+    }
+
+    /**
+     * Valida que un egreso no supere el capital disponible y sea válido.
+     * @param monto Monto del egreso (incluyendo cargos).
+     * @param capitalDisponible Capital disponible.
+     * @throws ExcepcionTransaccion si el egreso es inválido.
+     */
+    public static void validarEgreso(double monto, double capitalDisponible) throws ExcepcionTransaccion {
+        validarMontoPositivo(monto);
         if (monto > capitalDisponible) {
-            mensaje = "El egreso excede el capital disponible.";
-            return false;
+            throw new ExcepcionTransaccion("El egreso excede el capital disponible.");
         }
-        return true;
     }
-
-    public String getMensaje() {
-        return mensaje;
-    }
-
 }

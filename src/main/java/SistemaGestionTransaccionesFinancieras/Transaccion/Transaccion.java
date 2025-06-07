@@ -10,7 +10,7 @@ public abstract class Transaccion {
         this.descripcion = descripcion;
         this.fecha = fecha;
     }
-
+    /* Getters & Setters*/
     public double getMonto() {
         return monto;
     }
@@ -22,13 +22,15 @@ public abstract class Transaccion {
     public String getFecha() {
         return fecha;
     }
+    /* Metodos Abstractos*/
 
     public abstract double calcularImpuesto();
 
     public abstract boolean procesarTransaccion(double capitalActual, ExcepcionTransaccion validador);
 
+    /* String con placeholders mejorados*/
     @Override
     public String toString() {
-        return String.format("Fecha: | Monto: | Descripción: ", fecha, monto, descripcion);
+        return String.format("Fecha: %s | Monto: %.2f | Descripción: %s", fecha, monto, descripcion);
     }
 }

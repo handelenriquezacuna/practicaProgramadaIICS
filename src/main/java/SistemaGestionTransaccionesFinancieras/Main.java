@@ -1,12 +1,12 @@
 package SistemaGestionTransaccionesFinancieras;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import SistemaGestionTransaccionesFinancieras.Transaccion.Transaccion;
+import SistemaGestionTransaccionesFinancieras.Transaccion.Ingreso;
+import SistemaGestionTransaccionesFinancieras.Transaccion.Egreso;
+import SistemaGestionTransaccionesFinancieras.Transaccion.ExcepcionTransaccion;
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.print("Aca corre todo!");
-
+        System.out.println("Aqui corre todo!");
     }
 }
