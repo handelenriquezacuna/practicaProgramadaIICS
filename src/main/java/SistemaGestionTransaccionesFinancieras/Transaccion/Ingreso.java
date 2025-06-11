@@ -1,10 +1,11 @@
 package SistemaGestionTransaccionesFinancieras.Transaccion;
+import java.time.LocalDate;
 
 public class Ingreso extends Transaccion {
     private final double impuesto = 0.10;
 
-    public Ingreso(double monto, String descripcion, String fecha) {
-        super(monto, descripcion, fecha);
+    public Ingreso(double monto, String descripcion) {
+        super(monto, descripcion, LocalDate.now().toString());
     }
 
     @Override

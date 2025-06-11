@@ -1,12 +1,14 @@
 package SistemaGestionTransaccionesFinancieras;
 
-import SistemaGestionTransaccionesFinancieras.Transaccion.Transaccion;
-import SistemaGestionTransaccionesFinancieras.Transaccion.Ingreso;
-import SistemaGestionTransaccionesFinancieras.Transaccion.Egreso;
-import SistemaGestionTransaccionesFinancieras.Transaccion.ExcepcionTransaccion;
+import SistemaGestionTransaccionesFinancieras.Gestor.GestorTransacciones;
+import SistemaGestionTransaccionesFinancieras.Menu.MenuInteractivo;
+
+import static java.awt.SystemColor.menu;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Aqui corre todo siempre!");
+        GestorTransacciones gestor = new GestorTransacciones();
+        MenuInteractivo menu = new MenuInteractivo(gestor);
+        menu.mostrarMenu();
     }
 }

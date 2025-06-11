@@ -1,10 +1,11 @@
 package SistemaGestionTransaccionesFinancieras.Transaccion;
+import java.time.LocalDate;
 
 public class Egreso extends Transaccion {
     private final double cargoAdicional = 0.02f;
     /* Herencia aplicada*/
-    public Egreso(double monto, String descripcion, String fecha) {
-        super(monto, descripcion, fecha);
+    public Egreso(double monto, String descripcion) {
+        super(monto, descripcion, LocalDate.now().toString());
     }
 
     /*Metodos abstractos*/

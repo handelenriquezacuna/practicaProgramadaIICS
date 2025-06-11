@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="6ca79d2a-9300-49f1-a420-d43fb81f756f" name="Changes" comment="Agregado menú interactivo para gestionar transacciones">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SistemaGestionTransaccionesFinancieras/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SistemaGestionTransaccionesFinancieras/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SistemaGestionTransaccionesFinancieras/Menu/MenuInteractivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SistemaGestionTransaccionesFinancieras/Menu/MenuInteractivo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SistemaGestionTransaccionesFinancieras/Transaccion/Egreso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SistemaGestionTransaccionesFinancieras/Transaccion/Egreso.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SistemaGestionTransaccionesFinancieras/Transaccion/Ingreso.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SistemaGestionTransaccionesFinancieras/Transaccion/Ingreso.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,7 +17,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Jennifer &lt;jennihernandez421@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -93,7 +103,21 @@
       <option name="project" value="LOCAL" />
       <updated>1749612350136</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Agregado menú interactivo para gestionar transacciones">
+      <created>1749612429364</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1749612429364</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Agregado menú interactivo para gestionar transacciones">
+      <created>1749612575211</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1749612575211</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
